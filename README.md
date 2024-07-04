@@ -1,5 +1,5 @@
 # resume
-My digital resume and some kind of my product showcase
+My digital resume and some kind of my product showcase [text](https://rattar001.github.io/resume)
 
 # for development
 ## tailwind css
