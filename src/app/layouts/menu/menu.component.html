@@ -1,0 +1,7 @@
+<div class="menu-wrapper">
+    @for (menu of menuList; track $index) {
+    <div class="menu-item cursor-pointer truncate"
+        [class]="{'disabled': menu.disable, 'active': menu.active}"
+        (click)="menu.disable ? $event.preventDefault() : onMenuClicked(menu)"> {{menu.title}} </div>
+    }
+</div>

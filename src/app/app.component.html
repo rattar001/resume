@@ -1,3 +1,15 @@
-<h1 class="text-3xl font-bold underline">
-  Hello world!
-</h1>
+<div class="container mx-auto">
+
+  <rsm-image class="absolute mt-10" [imgSrc]="profileImageSrc"></rsm-image>
+  <div class="pl-52 pt-52">
+    <p class="font-bold pl-5"> {{firstname}} {{lastname}} </p>
+    <p class="font-medium pl-7"> {{role}} </p>
+  </div>
+  <rsm-divider></rsm-divider>
+  <div class="flex mt-5">
+    <rsm-menu class="flex-none w-32"></rsm-menu>
+    <div class="flex-auto shadow-md p-5">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
